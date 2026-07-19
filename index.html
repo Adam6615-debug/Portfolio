@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Khalil Taher — Cloud Security Engineer</title>
+<meta name="description" content="Portfolio of Adam Khalil Taher — Cloud Security & Network Security student. AWS, SIEM, container security, cryptography.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<nav class="sitenav">
+  <span class="sitenav__mark">AKT</span>
+  <div class="sitenav__links">
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- ============ HERO / TITLE BLOCK ============ -->
+<header class="hero" id="top">
+  <div class="hero__sheet-label">SHEET 01 / 05 — TITLE BLOCK</div>
+  <h1 class="hero__name">Adam Khalil<br>Taher</h1>
+  <p class="hero__role">Cloud Security &amp; Network Security Engineer <span class="hero__role-dim">(in training)</span></p>
+  <p class="hero__summary">Fourth-year cybersecurity student building AWS container-security tooling and SIEM
+    deployments. Internship experience spans SOC operations, enterprise banking networks, and
+    malware analysis.</p>
+
+  <div class="hero__titleblock">
+    <div class="tb__row">
+      <span class="tb__label">DRAWN BY</span>
+      <span class="tb__value">A. Khalil Taher</span>
+    </div>
+    <div class="tb__row">
+      <span class="tb__label">PROGRAM</span>
+      <span class="tb__value">Network &amp; Cyber Security — El Sewedy UT</span>
+    </div>
+    <div class="tb__row">
+      <span class="tb__label">GPA</span>
+      <span class="tb__value">3.50</span>
+    </div>
+    <div class="tb__row">
+      <span class="tb__label">STATUS</span>
+      <span class="tb__value tb__value--live">IN PROGRESS — CLASS OF 2027</span>
+    </div>
+  </div>
+
+  <div class="hero__ctas">
+    <a class="btn btn--primary" href="#projects">View projects</a>
+    <a class="btn btn--ghost" href="mailto:adamktaher1.0@gmail.com">Contact</a>
+  </div>
+</header>
+
+<!-- ============ SIGNATURE: TOPOLOGY DIAGRAM ============ -->
+<section class="topology" aria-label="Career topology diagram">
+  <div class="sheet-label">SHEET 02 / 05 — NETWORK TOPOLOGY</div>
+  <h2 class="section-title">How the pieces connect</h2>
+  <p class="section-sub">Drawn the way I'd document any network: nodes, links, and the path traffic actually takes.</p>
+  <div class="topo-wrap">
+    <svg id="topo-svg" viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="topoTitle">
+      <title id="topoTitle">Diagram connecting education, internships, and projects to a cloud security target role</title>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="experience" id="experience">
+  <div class="sheet-label">SHEET 03 / 05 — EXPERIENCE LOG</div>
+  <h2 class="section-title">Experience</h2>
+
+  <ol class="log">
+    <li class="log__entry">
+      <div class="log__meta">
+        <span class="log__date">JUL – AUG 2025</span>
+        <span class="log__tag">NETWORKING</span>
+      </div>
+      <h3 class="log__title">Network Security Intern — National Bank of Kuwait</h3>
+      <ul class="log__list">
+        <li>Reviewed live Site-to-Site / Remote-Access VPN configs in a production banking environment.</li>
+        <li>Analyzed rule sets on Cisco firewalls, FortiGate, F5 load balancers, and EfficientIP DDI.</li>
+        <li>Designed a multi-site network architecture (VLANs, OSPF, DHCP, NAT, ACLs) in a 3-day sprint.</li>
+      </ul>
+    </li>
+
+    <li class="log__entry">
+      <div class="log__meta">
+        <span class="log__date">JAN – APR 2025</span>
+        <span class="log__tag">SOC</span>
+      </div>
+      <h3 class="log__title">SOC Intern — IT Solera</h3>
+      <ul class="log__list">
+        <li>Deployed Wazuh SIEM with File Integrity Monitoring for real-time endpoint detection.</li>
+        <li>Built firewall + GeoIP blocking rules integrated with Wazuh; produced traffic analysis reports.</li>
+        <li>Ran static/dynamic/hybrid malware analysis in an isolated pfSense-protected VM; wrote a full Incident Response Plan.</li>
+        <li>Investigated 10+ real malware incidents, documenting IOCs and post-breach impact.</li>
+      </ul>
+    </li>
+
+    <li class="log__entry">
+      <div class="log__meta">
+        <span class="log__date">AUG – SEP 2024</span>
+        <span class="log__tag">GENERAL SEC</span>
+      </div>
+      <h3 class="log__title">Cyber Security Intern — Efinance</h3>
+      <ul class="log__list">
+        <li>Trained in incident response workflows and industry security frameworks.</li>
+        <li>Completed a Red Teaming LLM Applications course covering AI security threats.</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="projects" id="projects">
+  <div class="sheet-label">SHEET 04 / 05 — PROJECT SCHEMATICS</div>
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project-grid">
+
+    <article class="pcard">
+      <div class="pcard__head">
+        <span class="pcard__index">SCH-01</span>
+        <h3 class="pcard__title">Container Vulnerability Scanner Platform</h3>
+      </div>
+      <p class="pcard__desc">Automated vulnerability scanning for Docker images pushed to AWS ECR,
+        wired into CI/CD so builds get scanned before they ship.</p>
+      <ul class="pcard__list">
+        <li>Integrated Trivy with GitHub Actions to scan every container build.</li>
+        <li>Detects CVEs, exposed secrets, and misconfigurations pre-deployment.</li>
+      </ul>
+      <div class="pcard__stack">
+        <span>Docker</span><span>Trivy</span><span>AWS ECR</span><span>GitHub Actions</span><span>Kubernetes</span><span>Python</span>
+      </div>
+    </article>
+
+    <article class="pcard">
+      <div class="pcard__head">
+        <span class="pcard__index">SCH-02</span>
+        <h3 class="pcard__title">Wazuh SIEM Implementation</h3>
+      </div>
+      <p class="pcard__desc">LAN-wide log monitoring and alerting, tuned against real attack patterns
+        rather than default rules.</p>
+      <ul class="pcard__list">
+        <li>Tuned detection rules for brute-force attempts and privilege escalation.</li>
+        <li>Added GeoIP blocking and a pfSense-based firewall; ran a malware lab and wrote a full IR plan.</li>
+      </ul>
+      <div class="pcard__stack">
+        <span>Wazuh</span><span>Elastic Stack</span><span>pfSense</span><span>Ubuntu Server</span>
+      </div>
+    </article>
+
+    <article class="pcard">
+      <div class="pcard__head">
+        <span class="pcard__index">SCH-03</span>
+        <h3 class="pcard__title">Quantum-Safe Email Encryption Platform</h3>
+      </div>
+      <p class="pcard__desc">Post-quantum email tool built around NIST FIPS 203/204, with a
+        Harvest-Now/Decrypt-Later threat model behind the design.</p>
+      <ul class="pcard__list">
+        <li>ML-KEM-768 key encapsulation + ML-DSA-65 digital signatures.</li>
+        <li>AES-256-GCM + HKDF-SHA-256 body encryption, sealed in a hybrid RSA-2048-OAEP payload.</li>
+        <li>CLI dashboard for threat analysis.</li>
+      </ul>
+      <div class="pcard__stack">
+        <span>Python</span><span>RSA-2048</span><span>ML-KEM-768</span><span>ML-DSA-65</span><span>AES-256-GCM</span><span>SQLite</span>
+      </div>
+    </article>
+
+    <article class="pcard">
+      <div class="pcard__head">
+        <span class="pcard__index">SCH-04</span>
+        <h3 class="pcard__title">AI-Powered Deepfake &amp; Image Manipulation Detection</h3>
+      </div>
+      <p class="pcard__desc">Transfer-learned classifier plus interpretability tooling, so a flag
+        comes with a reason.</p>
+      <ul class="pcard__list">
+        <li>Fine-tuned MobileNetV2 on 20,000 face images, reaching 80%+ accuracy.</li>
+        <li>Combined CNN deepfake scoring, splicing detection, and gradient-based heatmaps.</li>
+      </ul>
+      <div class="pcard__stack">
+        <span>TensorFlow</span><span>OpenCV</span><span>scikit-image</span><span>Python</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ SKILLS / CERTS ============ -->
+<section class="skills" id="skills">
+  <div class="sheet-label">SHEET 05 / 05 — SPECIFICATIONS</div>
+  <h2 class="section-title">Skills &amp; certifications</h2>
+
+  <div class="spec-grid">
+    <div class="spec-col">
+      <h3 class="spec-col__title">Cloud</h3>
+      <p class="spec-col__body">AWS (VPC, EC2, S3, IAM, ECR) · IAM Policies · Cloud Security · Container Security · CI/CD Security</p>
+    </div>
+    <div class="spec-col">
+      <h3 class="spec-col__title">Security</h3>
+      <p class="spec-col__body">SIEM (Wazuh / Elastic) · Threat Detection · Incident Response · Firewall Management · VPN · IDS/IPS · Digital Forensics</p>
+    </div>
+    <div class="spec-col">
+      <h3 class="spec-col__title">Networking</h3>
+      <p class="spec-col__body">CCNA-level Networking · OSPF · VLANs · NAT · VPNs · Firewalls</p>
+    </div>
+    <div class="spec-col">
+      <h3 class="spec-col__title">Tools</h3>
+      <p class="spec-col__body">Wazuh · Elastic Stack · Trivy · Docker · Kubernetes · GitHub Actions · Wireshark · Kali Linux · FortiGate · Linux</p>
+    </div>
+    <div class="spec-col">
+      <h3 class="spec-col__title">Programming</h3>
+      <p class="spec-col__body">Python · Bash · SQL · PHP · JavaScript</p>
+    </div>
+    <div class="spec-col">
+      <h3 class="spec-col__title">Languages</h3>
+      <p class="spec-col__body">Arabic (Native) · English (C1) · French (B2)</p>
+    </div>
+  </div>
+
+  <div class="certs">
+    <div class="cert">
+      <span class="cert__mark">✓</span>
+      <div>
+        <p class="cert__name">IBM Cloud Computing Fundamentals</p>
+        <p class="cert__date">2026</p>
+      </div>
+    </div>
+    <div class="cert">
+      <span class="cert__mark">✓</span>
+      <div>
+        <p class="cert__name">AWS Certified Cloud Practitioner</p>
+        <p class="cert__date">2026</p>
+      </div>
+    </div>
+    <div class="cert cert--pending">
+      <span class="cert__mark">◐</span>
+      <div>
+        <p class="cert__name">AWS Solutions Architect Associate</p>
+        <p class="cert__date">In progress</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<footer class="contact" id="contact">
+  <h2 class="contact__title">Let's talk security.</h2>
+  <p class="contact__sub">Open to cloud security internships and junior roles.</p>
+  <div class="contact__links">
+    <a href="mailto:adamktaher1.0@gmail.com">adamktaher1.0@gmail.com</a>
+    <a href="tel:+201206514060">+20 120-651 4060</a>
+    <a href="https://github.com/Adam6615-debug" target="_blank" rel="noopener">GitHub / Adam6615-debug</a>
+    <a href="#" target="_blank" rel="noopener">LinkedIn / Adam Taher</a>
+  </div>
+  <p class="contact__foot">Revision 01 — 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
